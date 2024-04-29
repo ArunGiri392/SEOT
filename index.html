@@ -19,7 +19,7 @@
     max-width: 800px; /* Adjusted max-width for text alignment */
     margin: 40px auto; /* Centered the container with automatic horizontal margins */
     padding: 20px;
-    background: #fff; /* Container background set to white */
+    background:#edf2f7; /* Container background set to white */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px; /* Rounded corners for the container */
 }
@@ -40,9 +40,19 @@
 }
 
 .visual-overview {
-    width: 100%;
+    width: 300%;
     margin: 20px 0;
 }
+.visual_seot {
+  width: 100%;
+  transition: transform 0.5s ease; /* Smooth transition for zoom effect */
+  margin-top: 20px;
+}
+
+.visual_seot:hover {
+  transform: scale(1.1); /* Scale the image up to 110% when hovered */
+}
+
 
 h1, h2 {
     color: #333;
@@ -138,28 +148,61 @@ footer {
         <li class="blue-text"><strong>DSO Reporting:</strong> Ensures accurate and compliant DSO reporting.
       </ul>
 
-    <h2>Development Process</h2>
-    <p class="blue-text">The Self-Employed OPT Tool (SEOT) development harnessed the full capabilities of a modern tech stack, led by the industrious efforts of Full Stack Developer Arun Giri. Anchored in Next.js and Node.js, the SEOT's architecture was meticulously crafted to produce a responsive user interface that could react dynamically to user interactions, and a robust backend to manage the complex logic of immigration law and business compliance processes.</p>
-    <p class="blue-text">Why Next.js and Node.js? Next.js was chosen for its server-side rendering capabilities, ensuring a fast initial load and improved SEO, which is critical for user discoverability. Node.js provided a scalable backend framework that could handle multiple requests seamlessly—a must for the diverse international user base SEOT serves.</p>
-    <p class="blue-text">Key technical Challenges and Resolutions:</p>
+      <div class="visual_seot">
+        <img src="visualseot.jpg" alt="Dynamic Visual of the SEOT">
+    </div>
+
+    <p class="blue-text">Flow of SEOT</p>
     <ul>
-        <li class="blue-text">Challenge: The integration of a complex regulatory framework into a user-friendly application.</li>
-        <li class="blue-text">Resolution: The team implemented a customizable questionnaire, powered by TypeScript, enhancing the app’s ability to process legal jargon into understandable content.</li>
-        <li class="blue-text">Challenge: Automating the creation of contracts specific to each user’s academic and business details.</li>
-        <li class="blue-text">Resolution: By deploying AI-based systems for custom contract generation, SEOT was able to provide personalized documentation, simplifying the DSO approval process.</li>
+        <li class="blue-text"><strong>Evaluate Eligibility:</strong> TSEOT processes student information to ascertain eligibility for OPT, utilizing insights from the Copilot system.</li>
+        <li class="blue-text"><strong>Qualification Feedback:</strong>Unqualified students receive explanations and resources, while qualified students are guided through business structure options like Sole Proprietorship and LLC.</li>
+        <li class="blue-text"><strong>Business Creation: </strong>  Implements tools to gather necessary details for business formation, obtaining EINs, and establishing the student's company.</li>
+        <li class="blue-text"><strong>Contract and Compliance:</strong> Generates a custom contract aligned with the student's major and facilitates the update of SEVIS through DSOs, ensuring legal compliance.</li>
     </ul>
 
-    <h2 class="blue-text">Customer Feedback</h2>
-    <p class="blue-text">SEOT has received acclaim for its intuitive design and the significant time savings it offers. Users appreciate the peace of mind that comes from assured compliance and personalized business support.</p>
+      
+
+    <h2>Development Process</h2>
+    <p class="blue-text">The Self-Employed OPT Tool (SEOT) development harnessed the full capabilities of a modern tech stack, led by the industrious efforts of Full Stack Developer Arun Giri. Anchored in Next.js and Node.js, the SEOT's architecture was meticulously crafted to produce a responsive user interface that could react dynamically to user interactions, and a robust backend to manage the complex logic of immigration law and business compliance processes.</p>
+    <p class="blue-text"><strong> Why Next.js and Node.js?</strong></p>
+    <p class="blue-text">Next.js was chosen for its server-side rendering capabilities, ensuring a fast initial load and improved SEO, which is critical for user discoverability. Node.js provided a scalable backend framework that could handle multiple requests seamlessly—a must for the diverse international user base SEOT serves.</p>
+    <p class="blue-text">Key technical Challenges and Resolutions:</p>
+    <ul>
+        <li class="blue-text"><strong>Challenge:</strong> The integration of a complex regulatory framework into a user-friendly application.</li>
+        <li class="blue-text"><strong>Resolution:</strong>The team implemented a customizable questionnaire, powered by TypeScript, enhancing the app’s ability to process legal jargon into understandable content.</li>
+        <li class="blue-text"><strong>Challenge:</strong> Automating the creation of contracts specific to each user’s academic and business details.</li>
+        <li class="blue-text"><strong>Resolution:</strong> By deploying AI-based systems for custom contract generation, SEOT was able to provide personalized documentation, simplifying the DSO approval process.</li>
+    </ul>
+
+    
 
     <h2 class="blue-text">Team’s Insights</h2>
     <p class="blue-text">Arun Giri, the lead developer, leveraged Next.js and TypeScript to construct a feature-rich frontend, while integrating backend systems to streamline data flow and user interaction.</p>
 
-    <h2 class="blue-text"> Conclusion/Impact</h2>
-    <p class="blue-text">The SEOT by Algorizin has significantly transformed the post-graduation landscape for F1 students. Its intuitive AI-driven platform addresses the critical need for a clear, navigable path through the complexity of U.S. immigration procedures, empowering students with the confidence to start their entrepreneurial journey. The tool has been instrumental in reducing the administrative burden, providing personalized legal guidance, and ensuring compliance with immigration policies.</p> 
-    <p class="blue-text">The heightened accuracy in automating essential tasks and the positive feedback from its users underscore the profound impact SEOT has had. Its success not only lies in the technical excellence of the tool but also in its role in cultivating a new generation of international entrepreneurs, contributing to a richer, more diverse U.S. business ecosystem. </p>
+   
     
-    <footer>
+    <h2 class="blue-text">Developer's Insights: Arun Giri</h2>
+    <ul>
+    <li>
+    <p class="blue-text">Challenges</p>
+    <p class="blue-text">Understanding and integrating into a substantial existing codebase was a formidable challenge, especially when it came to repurposing existing components for new functionalities. Navigating and modifying the large codebase to integrate AI capabilities required meticulous code review and comprehension to enhance the system without introducing errors.</p>
+    </li>
+
+    <li>
+    <p class="blue-text">Contributions</p>
+    <p class="blue-text">Alongside questionnaire development, I contributed to the AI template generation feature by utilizing OpenAI's technology. This involved prompt engineering to create precise responses, ensuring that the generated contracts and business structures were accurate and tailored to the user’s specific academic and business context.</p>
+    </li>
+    <li>
+    <p class="blue-text">Learnings</p>
+    <p class="blue-text">This project has been a profound learning curve in AI application and prompt engineering. It taught me the subtleties of AI-driven content generation, particularly in how nuanced prompt design can vastly improve the relevance and accuracy of AI outputs. The interplay between AI and existing code has honed my skills in developing adaptable AI integrations, which will be a cornerstone in my future work, allowing for smarter and more user-centric technology solutions.</p>
+    </li>
+   </ul>
+
+   <h2 class="blue-text"> Conclusion</h2>
+   <p class="blue-text">The SEOT by Algorizin has significantly transformed the post-graduation landscape for F1 students. Its intuitive AI-driven platform addresses the critical need for a clear, navigable path through the complexity of U.S. immigration procedures, empowering students with the confidence to start their entrepreneurial journey. The tool has been instrumental in reducing the administrative burden, providing personalized legal guidance, and ensuring compliance with immigration policies.</p> 
+   <p class="blue-text">The heightened accuracy in automating essential tasks and the positive feedback from its users underscore the profound impact SEOT has had. Its success not only lies in the technical excellence of the tool but also in its role in cultivating a new generation of international entrepreneurs, contributing to a richer, more diverse U.S. business ecosystem. </p>
+    
+   <footer>
         <p>Article written by Arun Giri. All rights reserved.</p>
     </footer>
 </div>
